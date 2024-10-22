@@ -32,7 +32,7 @@ return {
         type = "server",
         port = "${port}",
         executable = {
-          command = "/home/evo/.local/share/nvim/mason/bin/codelldb",
+          command = vim.fn.stdpath "data" .. "/mason/bin/codelldb",
           args = { "--port", "${port}" },
         },
       }
